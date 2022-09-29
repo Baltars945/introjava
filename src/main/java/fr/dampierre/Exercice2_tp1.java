@@ -1,7 +1,7 @@
 package fr.dampierre;
 import java.util.Scanner;
 
-public class Execice2 {
+public class Exercice2_tp1 {
     public static void main(String[] args) {
         Scanner clavier = new Scanner(System.in);
         System.out.print("entrer l'heure:");

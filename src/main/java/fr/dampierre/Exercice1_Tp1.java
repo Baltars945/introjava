@@ -1,6 +1,6 @@
 package fr.dampierre;
 
-public class exercice1 {
+public class Exercice1_Tp1 {
     public static void main(String[] args) {
        
         int heures = 12;
