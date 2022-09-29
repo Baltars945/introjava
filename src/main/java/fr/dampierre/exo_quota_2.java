@@ -13,7 +13,7 @@ public class exo_quota_2 {
         int nbVenteSemaine = clavier.nextInt();
 
         clavier.close();
-
+        //commantaire bidon
         if (nbVenteSemaine >= quota) {
             System.out.println("Félicitations! Vous avez rempli le quota.");
         }else{
