@@ -7,19 +7,15 @@ public class Exercice_cafe_creme {
         int uncent = clavier.nextInt();
         System.out.println("pièce de 5 centime? :" );
         int cinqcent = clavier.nextInt();
-        cinqcent = cinqcent * 5;
         System.out.println("pièce de 10 centime? :" );
         int dixcent = clavier.nextInt();
-        dixcent = dixcent * 10;
         System.out.println("pièce de 20 centime? :" );
         int vingcent = clavier.nextInt();
-        vingcent = vingcent * 20;
         System.out.println("pièce de 50 centime? :" );
         int cinquantecent = clavier.nextInt();
-        cinquantecent = cinquantecent * 50;
 
         clavier.close();
-        int total = uncent + cinqcent + dixcent + vingcent + cinquantecent;
+        int total = uncent + 5 * cinqcent + 10 * dixcent + 20 * vingcent + 50 * cinquantecent;
         
         if (total < 100) {
             int reste = 100 - total;
