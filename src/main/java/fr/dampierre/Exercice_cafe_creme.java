@@ -1,4 +1,4 @@
-package fr;
+package fr.dampierre;
 import java.util.Scanner;;
 public class Exercice_cafe_creme {
     public static void main(String[] args) {
