@@ -8,7 +8,12 @@ public class Exercice1_Tp2 {
 
         clavier.close();
         int parité = Nombre % 2;
-        //pas finit 
+        
+        if (parité == 0) {
+            System.out.println(Nombre + " est pair");
+        } else {
+            System.out.println(Nombre + " est impair");
+        }
     }
     
 }
