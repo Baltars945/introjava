@@ -6,7 +6,7 @@ public class Exercice4_Tp2 {
         Scanner clavier = new Scanner(System.in);
         System.out.println("Quelle couleur souhaitez-vous ? :");
         String couleur = clavier.nextLine();
-        System.out.println(couleur);
+
         clavier.close();
         if (couleur.equals("r") || couleur.equals ("R")) {
             System.out.println("Vous avez choisi le rouge. ");
