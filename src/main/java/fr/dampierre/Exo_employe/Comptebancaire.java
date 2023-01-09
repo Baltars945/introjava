@@ -1,15 +1,15 @@
 package fr.dampierre.Exo_employe;
 
 public class Comptebancaire {
-    private String propriétaire;
+    private String proprietaire;
     private double solde;
     
-    Comptebancaire(String propriétaire, double solde) {
-        this.propriétaire = propriétaire;
+    Comptebancaire(String proprietaire, double solde) {
+        this.proprietaire = proprietaire;
         this.solde = solde;
     }
     void afficherinfo(){
-        System.out.println("Le compte de " + propriétaire + " a comme solde " + solde);
+        System.out.println("Propriétaire: " + proprietaire + "\n" +"Solde: " + solde + "\n");
     }
     void deposer(double argent) {
         solde += argent;

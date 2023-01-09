@@ -21,6 +21,6 @@ public class Employe {
         salaire = salaire * pourcent;
     }   
     void description(){
-    System.out.println(prenom + " " + nom + ", " + age +" ans " + "a un salaire de " + salaire);
+    System.out.println("prenom: " + prenom + "\n" + "nom: " + nom + "\n" + "age: " + age + "\n" + "salaire: " + salaire + "\n");
     }
 }
