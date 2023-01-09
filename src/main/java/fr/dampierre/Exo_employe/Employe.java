@@ -13,20 +13,14 @@ public class Employe {
         this.age = age;
         this.salaire = salaire;
     }
-    public String getprenom() {
-        return prenom;
-    }
-    public String getnom() {
-        return nom;
-    }
-    public int getage() {
-        return age;
-    }
-    public double getsalaire() {
-        return salaire;
-    }
+
+
     void augmentation(double pourcent) {
+        System.out.println(prenom + " " + nom + " a une augmentation de " + pourcent + " %.");
         pourcent = pourcent / 100 +1;
         salaire = salaire * pourcent;
     }   
+    void description(){
+    System.out.println(prenom + " " + nom + ", " + age +" ans " + "a un salaire de " + salaire);
+    }
 }
