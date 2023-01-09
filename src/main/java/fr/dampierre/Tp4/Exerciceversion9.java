@@ -1,21 +1,20 @@
 package fr.dampierre.Tp4;
-import java.security.Principal;
-import java.util.Random;
 import java.util.Scanner;
 public class Exerciceversion9 {
     public static void main(String[] args) {
-        Scanner Clavier = new Scanner(System.in);
-        System.out.println("Donner le nombre de parties.");
-        int nbpartie = Clavier.nextInt();
-        int tentatives = 0;
-        float moyenne = 0;
-        for ( int i = 0; i < nbpartie ; i++) {
-            int nombrealéatoire = 0 + (int) (Math.random() * 99);
-            int joueur = 0 + (int) (Math.random() * 99);
-            tentatives = tentatives + jeu(nombrealéatoire,joueur);    
+        try (Scanner Clavier = new Scanner(System.in)) {
+            System.out.println("Donner le nombre de parties.");
+            int nbpartie = Clavier.nextInt();
+            int tentatives = 0;
+            float moyenne = 0;
+            for ( int i = 0; i < nbpartie ; i++) {
+                int nombrealéatoire = 0 + (int) (Math.random() * 99);
+                int joueur = 0 + (int) (Math.random() * 99);
+                tentatives = tentatives + jeu(nombrealéatoire,joueur);    
+            }
+            moyenne = tentatives / nbpartie;
+            System.out.println("En moyenne, sur " + nbpartie + " parties, il m'a fallu en moyenne : " + moyenne);
         }
-        moyenne = tentatives / nbpartie;
-        System.out.println("En moyenne, sur " + nbpartie + " parties, il m'a fallu en moyenne : " + moyenne);
 }
     public static int jeu(int nombrealéatoire,int joueur){
         boolean win = false;    
