@@ -6,13 +6,17 @@ public class Patient {
     private double taille;
     private double IMC;
 
-    Patient(double poids,double taille){
-        this.poids = poids;
-        this.taille = taille;
+    Patient(double patient_poids,double patient_taille){
+        poids = patient_poids;
+        taille = patient_taille;
         IMC = 0;
+        if(taille < 0 || poids <0){
+            taille = 0;
+            poids = 0;
+        }
     }
     String calculerIMC(){
-        if(taille == 0){
+        if(taille == 0 || poids == 0){
             IMC = 0;
             return "" + IMC;
         } 
