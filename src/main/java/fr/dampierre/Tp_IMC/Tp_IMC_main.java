@@ -1,4 +1,4 @@
-package main.java.fr.dampierre.Tp_IMC;
+package fr.dampierre.Tp_IMC;
 
 public class Tp_IMC_main {
     // Méthode main initiale

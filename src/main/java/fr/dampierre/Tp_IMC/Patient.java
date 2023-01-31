@@ -1,4 +1,5 @@
-package main.java.fr.dampierre.Tp_IMC;
+package fr.dampierre.Tp_IMC;
+
 
 public class Patient {
     private double poids;
@@ -8,21 +9,17 @@ public class Patient {
     Patient(double poids,double taille){
         this.poids = poids;
         this.taille = taille;
+        IMC = 0;
     }
-    calculerIMC(){
+    String calculerIMC(){
         if(taille == 0){
             IMC = 0;
-            return IMC;
-        }
-        IMC = poids / taille;
-        return IMC;
+            return "" + IMC;
+        } 
+        return "" + poids / (taille*taille);
     }
-    caractéristiques(){
-        if(IMC = 0){
-            calculerIMC();
-            return "Patient: " + poids + " kg pour " + taille + " m (IMC: " + IMC + " )";
-        }
-        return "Patient: " + poids + " kg pour " + taille + " m (IMC: " + IMC + " )";
+    String caractéristiques(){
+        return "Patient: " + poids + " kg pour " + taille + " m (IMC: " + calculerIMC() + " )";
     }
     
 }
