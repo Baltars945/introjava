@@ -54,13 +54,14 @@ public class Tp_supermarche_main {
     
         // Les clients passent aux caisses
     
-   //     caisse1.scanner(caddie1);
-  //      caisse1.scanner(caddie2);
- //       caisse2.scanner(caddie3);
+        caisse1.scanner(caddie1);
+        caisse1.scanner(caddie2);
+        caisse2.scanner(caddie3);
     
         // Fin de journée, on affiche les totaux de chaque caisse
     
- //       caisse1.totalCaisse();
- //       caisse2.totalCaisse();
+        
+        caisse1.totalCaisse();
+        caisse2.totalCaisse();
       }
 }

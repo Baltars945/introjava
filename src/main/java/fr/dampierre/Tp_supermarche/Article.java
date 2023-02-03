@@ -10,4 +10,13 @@ public class Article {
         this.prix=prix;
         this.promotion = promotion;
     }
+    public double getPrix() {
+        return prix;
+    }
+    public String getNom() {
+        return nom;
+    }
+    public boolean getPromotion() {
+        return promotion;
+    }
 }
